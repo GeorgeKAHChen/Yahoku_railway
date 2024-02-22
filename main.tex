@@ -36,7 +36,8 @@
         
         \draw [fill=black] (-3.2, -3.7) circle[radius=0.0001];
         \draw [fill=black] (6.7, 6) circle[radius=0.0001];
-        
+
+
 
 
         % -------------------------------------------------------
@@ -46,30 +47,162 @@
         % -------------------------------------------------------
 
         % タイトル
-        \node [above] at (1.5, 4.8) {{\fontsize{22pt}{22pt}\selectfont\textbf{夜}}};
-        \node [above] at (2.5, 4.8) {{\fontsize{22pt}{22pt}\selectfont\textbf{北}}};
+        \node [above] at (1.5, 4.9) {{\fontsize{22pt}{22pt}\selectfont\textbf{夜}}};
+        \node [above] at (2.5, 4.9) {{\fontsize{22pt}{22pt}\selectfont\textbf{央}}};
         %\node [above] at (6, 3-0.3) {{\fontsize{22pt}{22pt}\selectfont\textbf{地}}};
         %\node [above] at (6, 2-0.3) {{\fontsize{22pt}{22pt}\selectfont\textbf{区}}};
-        \node [above] at (3.5, 4.8) {{\fontsize{22pt}{22pt}\selectfont\textbf{路}}};
-        \node [above] at (4.5, 4.8) {{\fontsize{22pt}{22pt}\selectfont\textbf{線}}};
-        \node [above] at (5.5, 4.8) {{\fontsize{22pt}{22pt}\selectfont\textbf{図}}};
+        \node [above] at (3.5, 4.9) {{\fontsize{22pt}{22pt}\selectfont\textbf{路}}};
+        \node [above] at (4.5, 4.9) {{\fontsize{22pt}{22pt}\selectfont\textbf{線}}};
+        \node [above] at (5.5, 4.9) {{\fontsize{22pt}{22pt}\selectfont\textbf{図}}};
 
+        % -------------------------------------------------------
+        % 凡　例
         \draw [color = LINE] (5.2, 1.8) -- (5.2, 4.5) -- (6.6, 4.5) -- (6.6, 1.8) -- (5.2, 1.8);
         \node [] at (5.9, 4.3){{\fontsize{6pt}{6pt}\selectfont\textbf{凡　例}}};
+
         \draw [color = black, line width = 2pt] (5.25, 4.0) -- (5.65, 4.0);
         \draw [color = white, dash dot, line width = 1pt] (5.25, 4.0) -- (5.65, 4.0);
         \node [right] at (5.6, 4.0){{\fontsize{5pt}{5pt}\selectfont{鉄道線}}};
-        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (5.4, 3.6) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{AB\\98}\par}};
+
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (5.45, 3.6) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{AB\\98}\par}};
         \node [right] at (5.6, 3.7){{\fontsize{5pt}{5pt}\selectfont{線路コード}}};
         \node [right] at (5.6, 3.5){{\fontsize{5pt}{5pt}\selectfont{駅コード}}};
-        \node [right] at (5.15, 3.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{豊空}}};
-        \node [right] at (5.6, 3.2){{\fontsize{5pt}{5pt}\selectfont{駅名}}};
-        \node [right] at (5.15, 2.9) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{北宮}}};
-        \node [right] at (5.6, 2.9){{\fontsize{5pt}{5pt}\selectfont{乗換駅}}};
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=6, text centered] at (5.4, 2.3) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{メ　　　モ}\par}}; 
-        \node [right] at (5.6, 2.6){{\fontsize{5pt}{5pt}\selectfont{メモ}}};
-        \node [right] at (5.6, 2.3){{\fontsize{5pt}{5pt}\selectfont{支線・貨物}}};
-        \node [right] at (5.6, 2.0){{\fontsize{5pt}{5pt}\selectfont{線名・駅}}};
+
+        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (5.35, 3.2) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{CD\\76}\par}};
+        \node [text=black, draw=KR, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (5.55, 3.2) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{EF\\54}\par}};
+        \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered] at (5.45, 3.2) {};
+        \node [right] at (5.6, 3.2){{\fontsize{5pt}{5pt}\selectfont{改札内乗換}}};
+        
+        \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (5.35, 2.9) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{GH\\32}\par}};
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (5.55, 2.9) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{IJ\\10}\par}};
+
+        \node [right] at (5.6, 2.9){{\fontsize{5pt}{5pt}\selectfont{改札外乗換}}};
+        \node [text=black, draw=OTHER, rounded corners= 1, text width=5.5, text height=0, text centered, ] at (5.45, 2.9) {};
+        \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered, densely dotted] at (5.45, 2.9) {};
+        
+        \node [right] at (5.15, 2.6) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{葉城}}};
+        \node [right] at (5.6, 2.6){{\fontsize{5pt}{5pt}\selectfont{新幹線乗換}}};
+
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.1, inner ysep=0.1, rounded corners= 1, text width=6, text centered] at (5.45, 2.2) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{メ　　モ}\par}}; 
+
+        \node [right] at (5.6, 2.3){{\fontsize{5pt}{5pt}\selectfont{メモ}}};
+        \node [right] at (5.6, 2.15){{\fontsize{3pt}{3pt}\selectfont{（支線・貨物線・貨}}};
+        \node [right] at (5.6, 2.05){{\fontsize{3pt}{3pt}\selectfont{物駅名）}}};
+
+
+        % -------------------------------------------------------
+        %
+        %   路線 - 線
+        %
+        % -------------------------------------------------------
+        
+
+        % 貨物線
+            % 夜北臨海貨物線
+        \draw [color = OTHER, line width = 2pt] (-3, 4.5) -- (-1, 4.5);
+        \draw [color = white, dash dot, line width = 1pt] (-3, 4.5) -- (-1, 4.5);
+        \draw [color = OTHER, line width = 2pt] (-2, 4.5) -- (-1.5, 4) -- (-1, 4);
+        \draw [color = white, dash dot, line width = 1pt] (-2, 4.5) -- (-1.5, 4) -- (-1, 4);
+        \draw [color = KR, line width = 2pt] (-2.3, 4.5) -- (-2, 4.2);
+        \draw [color = white, dash dot, line width = 1pt] (-2.3, 4.5) -- (-2, 4.2);
+            % 新紀支線
+        \draw [color = OTHER, line width = 2pt] (1, 1) -- (1.85, 0.15);
+        \draw [color = white, dash dot, line width = 1pt] (1, 1) -- (1.85, 0.15);
+            % 星原線/沢木空港貨物線
+        \draw [color = OTHER, line width = 2pt] (-1.85, 0.15) -- (-2, 0) --  (-2, -0.7)  -- (-1.7, -1) -- (-1.3, -1) -- (-1, -1.3)  -- (-1, -2.7) -- (-0.7, -3) -- (-0.5, -3);
+        \draw [color = white, dash dot, line width = 1pt] (-1.85, 0.15) -- (-2, 0) --  (-2, -0.7)  -- (-1.7, -1) -- (-1.3, -1) -- (-1, -1.3)  -- (-1, -2.7) -- (-0.7, -3) -- (-0.5, -3);
+
+
+        % 夜北本線
+        \draw [color = KY, line width = 2pt] (-2, -3) -- (-2, -2.3) -- (-1.7, -2) -- (-0.3, -2) -- (0, -1.7) -- (0, 0) -- (0, 0.3) -- (0.7, 1) -- (1.4, 1) -- (1.7, 1.3) -- (1.7, 1.7) -- (1.7, 2.6) -- (2, 2.9) -- (2.6, 2.9)-- (2.9, 3.2) -- (2.9, 3.7) -- (3.2, 4) -- (4.5, 4);
+        \draw [color = white, dash dot, line width = 1pt] (-2, -3) -- (-2, -2.3) -- (-1.7, -2) -- (-0.3, -2) -- (0, -1.7) -- (0, 0) -- (0, 0.3) -- (0.7, 1) -- (1.4, 1) -- (1.7, 1.3) -- (1.7, 1.7) -- (1.7, 2.6) -- (2, 2.9) -- (2.6, 2.9)-- (2.9, 3.2) -- (2.9, 3.7) -- (3.2, 4) -- (4.5, 4);
+
+        % 夜北空港線
+        \draw [color = KY, line width = 2pt] (0, -1.7) -- (0, -3);
+        \draw [color = white, dash dot, line width = 1pt] (0, -1.7) -- (0, -3);        
+        
+        % りんかい線
+        \draw [color = KR, line width = 2pt] (-2, 6) -- (-2, 0.3) -- (-1.7, 0) -- (0, 0);
+        \draw [color = white, dash dot, line width = 1pt] (-2, 6) -- (-2, 0.3) -- (-1.7, 0) -- (0, 0);
+        
+        % 北宮環状線
+        \draw [color = KK, line width = 2pt] (4.1, 3.90) -- (3.3, 3.9) -- (3, 3.6) -- (3, 0.3) -- (3.3, 0) -- (4.7, 0) -- (5, 0.3) -- (5, 3.6) -- (4.7, 3.9) -- (4.1, 3.9);
+        \draw [color = white, dash dot, line width = 1pt] (4.1, 3.90) -- (3.3, 3.9) -- (3, 3.6) -- (3, 0.3) -- (3.3, 0) -- (4.7, 0) -- (5, 0.3) -- (5, 3.6) -- (4.7, 3.9) -- (4.1, 3.9);
+            % 林口線
+        \draw [color = KK, line width = 2pt] (3.3, 0) -- (3.15, 0) -- (2.85, -0.3) -- (2.85, -1);
+        \draw [color = white, dash dot, line width = 1pt] (3.3, 0) -- (3.15, 0) -- (2.85, -0.3) -- (2.85, -1);
+
+
+        % 夜北中央線
+        \draw [color = KC, line width = 2pt] (4.5, 4.1) -- (3.1, 4.1) -- (2.8, 3.8) -- (2.8, 3.3) -- (2.5, 3)-- (-1.6, 3) -- (-1.9, 3.3) -- (-1.9, 4);
+        \draw [color = white, dash dot, line width = 1pt] (4.5, 4.1) -- (3.1, 4.1) -- (2.8, 3.8) -- (2.8, 3.3) -- (2.5, 3)-- (-1.6, 3) -- (-1.9, 3.3) -- (-1.9, 4);
+        
+        
+        % 葉城線
+        \draw [color = KB, line width = 2pt] (0.1, 5) -- (0.1, -0.7) -- (0.4, -1) -- (2.7, -1) -- (3, -1.3) -- (3, -2.7) -- (3.3, -3) -- (5, -3);    
+        \draw [color = white, dash dot, line width = 1pt] (0.1, 5) -- (0.1, -0.7) -- (0.4, -1) -- (2.7, -1) -- (3, -1.3) -- (3, -2.7) -- (3.3, -3) -- (5, -3);   
+        
+
+        
+        % 夜北新幹線
+        \draw [color = KS, line width = 2pt] (-0.1, 5) -- (-0.1, -3);
+        \draw [color = white, dash dot, line width = 1pt] (-0.1, 5) -- (-0.1, -3);
+
+
+
+        % 星川メトロ　宮星線
+        \draw [color = MM, line width = 2pt] (-2, 1) -- (-1.3, 1) -- (-0.3, 0) -- (1.7, 0) -- (2.7, 1) -- (5, 1);
+        \draw [color = white, dash dot, line width = 1pt] (-2, 1) -- (-1.3, 1) -- (-0.3, 0) -- (1.7, 0) -- (2.7, 1) -- (5, 1);
+        
+
+        % 星川メトロ　藤咲線
+        \draw [color = MF, line width = 2pt] (-1, 3) -- (-1, 2.3) -- (-0.7, 2) -- (0.7, 2) -- (1, 1.7) -- (1, -1.7) -- (0.7, -2) -- (0.45, -2) -- (0.15, -2.3) -- (0.15, -2.85) -- (0.45, -3.15) -- (0.85, -3.15) -- (1.15, -2.85) -- (2.85, -2.85);
+        \draw [color = white, dash dot, line width = 1pt] (-1, 3) -- (-1, 2.3) -- (-0.7, 2) -- (0.7, 2) -- (1, 1.7) -- (1, -1.7) -- (0.7, -2) -- (0.45, -2) -- (0.15, -2.3) -- (0.15, -2.85) -- (0.45, -3.15) -- (0.85, -3.15) -- (1.15, -2.85) -- (2.85, -2.85);
+        
+
+
+        % その他
+            %夜北本線　南
+        \draw [color = black, line width = 2pt] (-2, -3) -- (-2, -3.5);
+        \draw [color = white, dash dot, line width = 1pt] (-2, -3) -- (-2, -3.5);
+            %夜北本線　北
+        \draw [color = black, line width = 2pt] (4.5, 4.0) -- (4.7, 4.0) -- (5, 4.3) -- (5, 4.6);
+        \draw [color = white, dash dot, line width = 1pt] (4.5, 4.0) -- (4.7, 4.0) -- (5, 4.3) -- (5, 4.6);
+            %葉城本線　南
+        \draw [color = black, line width = 2pt] (5, -3) -- (5.7, -3);
+        \draw [color = white, dash dot, line width = 1pt] (5, -3) -- (5.7, -3);
+            %葉城本線　北
+        \draw [color = black, line width = 2pt] (0.1, 5) -- (0.1, 5.7);
+        \draw [color = white, dash dot, line width = 1pt] (0.1, 5) -- (0.1, 5.7);
+            %夜北新幹線
+        \draw [color = black, line width = 2pt] (-0.1, 5) -- (-0.1, 5.2) -- (-0.3, 5.4) -- (-0.7, 5.4);
+        \draw [color = white, dash dot, line width = 1pt] (-0.1, 5) -- (-0.1, 5.2) -- (-0.3, 5.4) -- (-0.7, 5.4);
+
+
+        % -------------------------------------------------------
+        %
+        %   他
+        %
+        % -------------------------------------------------------
+        % 貨物駅
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-3, 4.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{羽森ふ頭\\貨物駅}\par}};
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-1, 4.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{夜北総局\\貨物駅}\par}};
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-1, 4) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{管理局\\貨物駅}\par}};
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-0.4, -3) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{沢木空港\\貨物駅}\par}};
+
+        % 貨物線・支線　名称
+        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-1.5, 4.3) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{夜北臨海\\貨物線}\par}};
+        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-1.85, -0.85) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{星原線}\par}};
+        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at(-1, -2.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{星原線}\par}};
+        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (1.5, 0.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{新紀支線}\par}};
+
+        % XX線・XX行き
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (-2, -3.5) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{夜北本線\\川田方面}\par}}; % かわでん
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (5, 4.7) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{夜北本線\\木塚方面}\par}}; %きずか
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (0.1, 5.7) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{葉城本線\\？？方面}\par}}; 
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=17, text centered] at (-0.7, 5.4) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{夜北新幹線\\？？方面}\par}}; 
+        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (5.7, -3) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{葉城本線\\？？方面}\par}}; 
+
 
 
         % -------------------------------------------------------
@@ -140,98 +273,106 @@
 
         % -------------------------------------------------------
         %
-        %   路線 - 線
+        %   駅の名称 & 乗り換え駅のボークス
         %
         % -------------------------------------------------------
 
+        % 星川 / 沢木空港
+        \node [left] at (-0.05,-0.25) {{\fontsize{7.5pt}{7.5pt}\selectfont\textbf{星川}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=16.5, text height=0, text centered] at (-0.1, 0) {};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=0, text height=0, text centered, ] at (0.4, 0) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=0, text height=0, text centered, densely dotted] at (0.4, 0) {};
+        \node [below] at (0.05, -3) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{沢木空港}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered] at (0, -3) {};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=0, text height=0, text centered, ] at (0.3, -3) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=0, text height=0, text centered, densely dotted] at (0.3, -3) {};
+
         % 夜北本線
-        \draw [color = KY, line width = 2pt] (-2, -3) -- (-2, -2.3) -- (-1.7, -2) -- (-0.3, -2) -- (0, -1.7) -- (0, 0) -- (0, 0.3) -- (2, 1.7) -- (2, 2.8) -- (3.2, 4) -- (4, 4);
-        \draw [color = white, dash dot, line width = 1pt] (-2, -3) -- (-2, -2.3) -- (-1.7, -2) -- (-0.3, -2) -- (0, -1.7) -- (0, 0) -- (0, 0.3) -- (2, 1.7) -- (2, 2.8) -- (3.2, 4) -- (4, 4);
-
-        % 夜北空港線
-        \draw [color = KY, line width = 2pt] (0, -1.7) -- (0, -3);
-        \draw [color = white, dash dot, line width = 1pt] (0, -1.7) -- (0, -3);        
+        \node [below] at (4.5,3.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{豊空}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=0, text height=11, text centered] at (4.5, 4) {};
+        \node [below] at (3.5,3.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{北宮}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=0, text height=11, text centered] at (3.5, 4) {};
+        \node [below] at (2.3,2.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{千譜}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=0, text height=5.5, text centered] at (2.3, 2.95) {};
+        \node [right] at (1.7,2.00) {{\fontsize{5.5pt}{5.5pt}\selectfont{紀梨}}};
+        \node [right] at (0.95,1.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{青星}}};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=5.5, text height=0, text centered, ] at (1, 1.0) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered, densely dotted] at (1, 1.0) {};
+        \node [left] at (0, -1) {{\fontsize{5.5pt}{5.5pt}\selectfont{万歳別}}};
+        \node [above] at (-0.5, -1.85) {{\fontsize{5.5pt}{5.5pt}\selectfont{夜北庭絵}}};
+        \node [below] at (-1, -2) {{\fontsize{5.5pt}{5.5pt}\selectfont{南狭海}}};
+        \node [left] at (-1.85, -2.15) {{\fontsize{5.5pt}{5.5pt}\selectfont{夜北黒石}}};
+        \node [left] at (-2, -3) {{\fontsize{5.5pt}{5.5pt}\selectfont{幌座}}};
         
+
         % りんかい線
-        \draw [color = KR, line width = 2pt] (-2, 6) -- (-2, 0.3) -- (-1.7, 0) -- (0, 0);
-        \draw [color = white, dash dot, line width = 1pt] (-2, 6) -- (-2, 0.3) -- (-1.7, 0) -- (0, 0);
-        
+        \node [above] at (-1, 0) {{\fontsize{5.5pt}{5.5pt}\selectfont{星館}}};
+        \node [right] at (-1.85, 0.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{星原}}};
+        \node [left] at (-2, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{藤学前}}};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=5.5, text height=0, text centered, ] at (-1.9, 1) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered, densely dotted] at (-1.9, 1) {};
+        \node [left] at (-2, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{軽石}}};
+        \node [left] at (-2, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{夜北ドーム}}};
+        \node [left] at (-2.1, 4) {{\fontsize{5.5pt}{5.5pt}\selectfont{西管理局}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered] at (-2, 4) {};
+        \node [left] at (-2, 5) {{\fontsize{5.5pt}{5.5pt}\selectfont{羽森ふ頭}}};
+        \node [left] at (-2, 6) {{\fontsize{5.5pt}{5.5pt}\selectfont{羽森温泉}}};
+
         % 北宮環状線
-        \draw [color = KK, line width = 2pt] (4.1, 3.90) -- (3.3, 3.9) -- (3, 3.6) -- (3, 1);
-        \draw [color = white, dash dot, line width = 1pt] (4.1, 3.90) -- (3.3, 3.9) -- (3, 3.6) -- (3, 1);
-        \draw [color = KK, line width = 2pt] (3, 1) arc[start angle=180, end angle=360, radius=1];
-        \draw [color = white, dash dot, line width = 1pt] (3, 1) arc[start angle=180, end angle=360, radius=1];        
-        \draw [color = KK, line width = 2pt] (5, 1) -- (5, 3.00);
-        \draw [color = white, dash dot, line width = 1pt] (5, 1) -- (5, 3.00);        
-        \draw [color = KK, line width = 2pt] (5, 3.00) arc[start angle=0, end angle=90, radius=0.9];
-        \draw [color = white, dash dot, line width = 1pt] (5, 3.00) arc[start angle=0, end angle=90, radius=0.9];        
-        \draw [color = KK, line width = 2pt] (4, 0) arc[start angle=90, end angle=180, radius=1];
-        \draw [color = white, dash dot, line width = 1pt] (4, 0) arc[start angle=90, end angle=180, radius=1];        
-        
+        \node [left] at (5, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{新北}}};
+        \node [left] at (5, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{水香}}};
+        \node [left] at (5, 0.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{坂星}}};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=5.5, text height=0, text centered, ] at (5, 1) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered, densely dotted] at (5, 1) {};
+        \node [above] at (4, 0) {{\fontsize{5.5pt}{5.5pt}\selectfont{拓海}}};
+        \node [right] at (3, 0.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{神宮前}}};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=5.5, text height=0, text centered, ] at (3, 1) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered, densely dotted] at (3, 1) {};
+        \node [right] at (3, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{可務}}};
+        \node [right] at (3, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{藻遠}}};
+
         % 夜北中央線
-        \draw [color = KC, line width = 2pt] (4, 4.1) -- (3.1, 4.1) -- (2, 3) -- (-1, 3);
-        \draw [color = white, dash dot, line width = 1pt] (4, 4.1) -- (3.1, 4.1) -- (2, 3) -- (-1, 3);
-        \draw [color = KC, line width = 2pt] (-1.9, 3.9) arc[start angle=180, end angle=270, radius=0.9];
-        \draw [color = white, dash dot, line width = 1pt] (-1.9, 3.9) arc[start angle=180, end angle=270, radius=0.9];
-        
-        
+        \node [above] at (1.3, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{真田沢}}};
+        \node [right] at (0.1, 3.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{春葉}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered] at (0.2, 3.0) {};
+        \node [above] at (-1, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{御野田}}};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=0, text height=5.5, text centered, ] at (-1, 2.9) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=0, text height=5.5, text centered, densely dotted] at (-1, 2.9) {};
+
+
         % 葉城線
-        \draw [color = KB, line width = 2pt] (0.1, 5) -- (0.1, 0);
-        \draw [color = white, dash dot, line width = 1pt] (0.1, 5) -- (0.1, 0);
-        \draw [color = KB, line width = 2pt] (0.1, -0.1) arc[start angle=180, end angle=270, radius=0.9];
-        \draw [color = white, dash dot, line width = 1pt] (0.1, -0.1) arc[start angle=180, end angle=270, radius=0.9];
-        \draw [color = KB, line width = 2pt] (1, -1) -- (2.7, -1) -- (3, -1.3) -- (3, -2.7) -- (3.3, -3) -- (5, -3);    
-        \draw [color = white, dash dot, line width = 1pt] (1, -1) -- (2.7, -1) -- (3, -1.3) -- (3, -2.7) -- (3.3, -3) -- (5, -3);    
-        
-
-        
-        % 夜北新幹線
-        \draw [color = KS, line width = 2pt] (-0.1, 5) -- (-0.1, -3);
-        \draw [color = white, dash dot, line width = 1pt] (-0.1, 5) -- (-0.1, -3);
-
-
+        \node [right] at (0.1, 5) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{葉城}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered] at (0, 5) {};
+        \node [right] at (0.1, 4) {{\fontsize{5.5pt}{5.5pt}\selectfont{北玉}}};
+        \node [below] at (0.4, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{藤咲}}};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=5.5, text height=0, text centered, ] at (0.2, 2.0) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered, densely dotted] at (0.2, 2.0) {};
+        \node [right] at (0.1, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{若菜}}};
+        \node [below] at (0.8,-1) {{\fontsize{5.5pt}{5.5pt}\selectfont{荒星}}};
+        \node [below] at (2,-1) {{\fontsize{5.5pt}{5.5pt}\selectfont{久山}}};
+        \node [right] at (2.85,-1.05) {{\fontsize{5.5pt}{5.5pt}\selectfont{林口}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=0, text height=5.5, text centered] at (2.85, -1.05) {};
+        \node [left] at (3,-2) {{\fontsize{5.5pt}{5.5pt}\selectfont{上沢}}};
+        \node [below] at (3.05,-2.85) {{\fontsize{5.5pt}{5.5pt}\selectfont{稲沢}}};
+            \node [text=black, draw=OTHER, rounded corners= 1, text width=5.5, text height=0, text centered, ] at (3.05, -2.85) {};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered, densely dotted] at (3.05, -2.85) {};
+        \node [below] at (4,-3) {{\fontsize{5.5pt}{5.5pt}\selectfont{沢木}}};
+        \node [below] at (5,-3) {{\fontsize{5.5pt}{5.5pt}\selectfont{下沢}}};
 
         % 星川メトロ　宮星線
-        \draw [color = MM, line width = 2pt] (-2, 1) -- (-1.3, 1) -- (-0.3, 0) -- (1.7, 0) -- (2.7, 1) -- (5, 1);
-        \draw [color = white, dash dot, line width = 1pt] (-2, 1) -- (-1.3, 1) -- (-0.3, 0) -- (1.7, 0) -- (2.7, 1) -- (5, 1);
-        
+        \node [above] at (-1, 0.85) {{\fontsize{5.5pt}{5.5pt}\selectfont{西郷}}};
+        \node [above] at (-1.65, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{学院前}}};
+        \node [right] at (1.0, -0.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{星川離宮}}};
+            \node [text=black, draw=black, rounded corners= 1, text width=5.5, text height=0, text centered] at (1.1, 0) {};
+        \node [right] at (1.85, 0.15) {{\fontsize{5.5pt}{5.5pt}\selectfont{新紀}}};
+        \node [above] at (4, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{たぬき町}}};
 
         % 星川メトロ　藤咲線
-        \draw [color = MF, line width = 2pt] (-1, 3) -- (-1, 2.3) -- (-0.7, 2) -- (0, 2) ;
-        \draw [color = white, dash dot, line width = 1pt] (-1, 3) -- (-1, 2.3) -- (-0.7, 2) -- (0, 2) ;
-        \draw [color = MF, line width = 2pt] (1, 1) arc[start angle=0, end angle=90, radius=1.0];
-        \draw [color = white, dash dot, line width = 1pt] (1, 1) arc[start angle=0, end angle=90, radius=1.0];
-        \draw [color = MF, line width = 2pt]  (1, 1) -- (1, -0.7) -- (0.1, -1.3) -- (0.1, -2.7) -- (0.4, -3) -- (3, -3);
-        \draw [color = white, dash dot, line width = 1pt] (1, 1) -- (1, -0.7) -- (0.1, -1.3) -- (0.1, -2.7) -- (0.4, -3) -- (3, -3);
-        
-
-        % 貨物線
-        \draw [color = OTHER, line width = 2pt] (-3, 3.5) -- (-2, 4) -- (-1, 4);
-        \draw [color = white, dash dot, line width = 1pt] (-3, 3.5) -- (-2, 4) -- (-1, 4);
-        \draw [color = OTHER, line width = 2pt] (-2, 4) -- (-1, 3.5);
-        \draw [color = white, dash dot, line width = 1pt] (-2, 4) -- (-1, 3.5);
-        \draw [color = OTHER, line width = 2pt] (1, 1) -- (1.85, 0.15);
-        \draw [color = white, dash dot, line width = 1pt] (1, 1) -- (1.85, 0.15);
-        \draw [color = OTHER, line width = 2pt] (-1.85, 0.15) -- (-2, 0) -- (-2, -1);
-        \draw [color = white, dash dot, line width = 1pt] (-1.85, 0.15) -- (-2, 0) -- (-2, -1);
-        \draw [color = OTHER, line width = 2pt] (-2, -1) arc[start angle=180, end angle=270, radius=1];
-        \draw [color = white, dash dot, line width = 1pt] (-2, -1) arc[start angle=180, end angle=270, radius=1];
-        \draw [color = OTHER, line width = 2pt] (-0.5, -2.5) arc[start angle=0, end angle=90, radius=0.5];
-        \draw [color = white, dash dot, line width = 1pt] (-0.5, -2.5) arc[start angle=0, end angle=90, radius=0.5];
-        \draw [color = OTHER, line width = 2pt] (-0.5, -3) -- (-0.5, -2.5);
-        \draw [color = white, dash dot, line width = 1pt] (-0.5, -3) -- (-0.5, -2.5);
-
-        % その他
-        \draw [color = black, line width = 2pt] (-2, -3) -- (-2, -3.5);
-        \draw [color = white, dash dot, line width = 1pt] (-2, -3) -- (-2, -3.5);
-        \draw [color = black, line width = 2pt] (4, 4.05) -- (4.7, 4.05);
-        \draw [color = white, dash dot, line width = 1pt] (4, 4.05) -- (4.5, 4.05);
-        \draw [color = black, line width = 2pt] (0.1, 5) -- (0.1, 5.7);
-        \draw [color = white, dash dot, line width = 1pt] (0.1, 5) -- (0.1, 5.7);
-        \draw [color = black, line width = 2pt] (-0.1, 5) -- (-0.1, 5.2) -- (-0.3, 5.4) -- (-0.7, 5.4);
-        \draw [color = white, dash dot, line width = 1pt] (-0.1, 5) -- (-0.1, 5.2) -- (-0.3, 5.4) -- (-0.7, 5.4);
-        \draw [color = black, line width = 2pt] (5, -3) -- (5.7, -3);
-        \draw [color = white, dash dot, line width = 1pt] (5, -3) -- (5.7, -3);
+        \node [left] at (-0.85, 2.15) {{\fontsize{5.5pt}{5.5pt}\selectfont{涼風公園}}};
+        \node [right] at (1, -0.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{星館山公園}}};
+        \node [right] at (0.3, -2.15) {{\fontsize{5.5pt}{5.5pt}\selectfont{庭絵万歳}}};
+        \node [below] at (1, -3.1) {{\fontsize{5.5pt}{5.5pt}\selectfont{空港第二ビル}}};
+        \node [below] at (2, -2.85) {{\fontsize{5.5pt}{5.5pt}\selectfont{琴美}}};
 
 
 
@@ -242,10 +383,10 @@
         % -------------------------------------------------------
 
         % 夜北本線
-        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 4, 4.00) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\38}\par}};
-        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 3.1, 3.9) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\37}\par}};
-        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 2.15, 2.95) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\36}\par}};
-        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 2, 2) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\35}\par}};
+        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 4.5, 4.00) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\38}\par}};
+        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 3.5, 4.0) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\37}\par}};
+        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 2.3, 2.85) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\36}\par}};
+        \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 1.7, 2) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\35}\par}};
         \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 1.1, 1) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\34}\par}};
         \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 0, 0){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\33}\par}};
         \node [text=black, draw=KY, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 0, -1){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KY\\32}\par}};
@@ -269,22 +410,22 @@
         \node [text=black, draw=KR, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (-2, 6){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KR\\09}\par}};
 
         % 北宮環状線
-        \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3.05, -1){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\01}\par}};
+        \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (2.85, -0.95){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\01}\par}};
         \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (4, 0){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\02}\par}};
         \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (5.1, 1){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\03}\par}};
         \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (5, 2){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\04}\par}};
         \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (5, 3){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\05}\par}};
-        \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (4, 3.8){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\06}\par}};
-        \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3.2, 3.7){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\07}\par}};
+        \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (4.5, 3.8){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\06}\par}};
+        \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3.5, 3.8){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\07}\par}};
         \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3, 3){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\08}\par}};
         \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3, 2){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\09}\par}};
         \node [text=black, draw=KK, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3.1, 1){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KK\\10}\par}};
 
         % 夜北中央線
-        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (4, 4.2){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\01}\par}};
-        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3, 4.1){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\02}\par}};
-        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (2.15, 3.15){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\03}\par}};
-        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (1, 3){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\04}\par}};
+        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (4.5, 4.2){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\01}\par}};
+        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (3.5, 4.2){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\02}\par}};
+        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (2.3, 3.05){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\03}\par}};
+        \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (1.3, 3){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\04}\par}};
         \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (0.3, 3){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\05}\par}};
         \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (-1, 3){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\06}\par}};
         \node [text=black, draw=KC, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=4.75, text centered] at (-1.9, 4){\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KC\\07}\par}};
@@ -296,7 +437,7 @@
         \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 3, -2) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\18}\par}};
         \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 2.85, -1.15) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\19}\par}};
         \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 2, -1) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\20}\par}};
-        \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 0.85, -1) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\21}\par}};
+        \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 0.8, -1) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\21}\par}};
         \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 0.2, 0.0) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\22}\par}};
         \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 0.1, 1) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\23}\par}};
         \node [text=black, draw=KB, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at ( 0.1, 2) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{KB\\24}\par}};
@@ -323,114 +464,18 @@
         % 星川メトロ　藤咲線
         \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (-1, 2.8) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\01}\par}};
         \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (-0.85, 2.15) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\02}\par}};
-        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.3, 1.95) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\03}\par}};
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.3, 2.0) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\03}\par}};
         \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.9, 1) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\04}\par}};
         \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (1.0, 0) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\05}\par}};
-        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.65, -0.95) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\06}\par}};
-        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.1, -1.85) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\07}\par}};
-        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.25, -2.8) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\08}\par}};
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (1.0, -0.8) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\06}\par}};
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.3, -2.15) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\07}\par}};
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (0.3, -3) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\08}\par}};
         \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (1, -3) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\09}\par}};
-        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (2, -3) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\10}\par}};
-        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (2.95, -3) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\11}\par}};
-
-
-        % -------------------------------------------------------
-        %
-        %   駅の名称
-        %
-        % -------------------------------------------------------
-
-        % 星川
-        \node [left] at (-0.05,-0.25) {{\fontsize{7.5pt}{7.5pt}\selectfont\textbf{星川}}};
-
-        % 夜北本線
-        \node [right] at (4,4.3) {{\fontsize{5.5pt}{5.5pt}\selectfont{豊空}}};
-        \node [right] at (3,4.3) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{北宮}}};
-        \node [left] at (2.15,3.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{千譜}}};
-        \node [right] at (2,2.00) {{\fontsize{5.5pt}{5.5pt}\selectfont{紀梨}}};
-        \node [right] at (1.1,1) {{\fontsize{5.5pt}{5.5pt}\selectfont{青星}}};
-        \node [left] at (0, -1) {{\fontsize{5.5pt}{5.5pt}\selectfont{万歳別}}};
-        \node [right] at (0.1, -1.85) {{\fontsize{5.5pt}{5.5pt}\selectfont{夜北庭絵}}};
-        \node [above] at (-1, -2) {{\fontsize{5.5pt}{5.5pt}\selectfont{南狭海}}};
-        \node [left] at (-1.85, -2.15) {{\fontsize{5.5pt}{5.5pt}\selectfont{夜北黒石}}};
-        \node [left] at (-2, -3) {{\fontsize{5.5pt}{5.5pt}\selectfont{幌座}}};
-        \node [below] at (-0.03, -3) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{沢木空港}}};
-
-        % りんかい線
-        \node [above] at (-1, 0) {{\fontsize{5.5pt}{5.5pt}\selectfont{星館}}};
-        \node [right] at (-1.85, 0.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{星原}}};
-        \node [left] at (-2, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{藤学前}}};
-        \node [left] at (-2, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{軽石}}};
-        \node [left] at (-2, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{夜北ドーム}}};
-        \node [left] at (-2.1, 4) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{西管理局}}};
-        \node [left] at (-2, 5) {{\fontsize{5.5pt}{5.5pt}\selectfont{羽森ふ頭}}};
-        \node [left] at (-2, 6) {{\fontsize{5.5pt}{5.5pt}\selectfont{羽森温泉}}};
-
-        % 北宮環状線
-        \node [left] at (5, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{新北}}};
-        \node [left] at (5, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{水香}}};
-        \node [left] at (5, 0.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{坂星}}};
-        \node [above] at (4, 0) {{\fontsize{5.5pt}{5.5pt}\selectfont{拓海}}};
-        \node [right] at (3, 0.8) {{\fontsize{5.5pt}{5.5pt}\selectfont{神宮前}}};
-        \node [right] at (3, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{可務}}};
-        \node [right] at (3, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{藻遠}}};
-
-        % 夜北中央線
-        \node [above] at (1, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{真田沢}}};
-        \node [right] at (0.1, 3.2) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{春葉}}};
-        \node [above] at (-1, 3) {{\fontsize{5.5pt}{5.5pt}\selectfont{御野田}}};
-
-        % 葉城線
-        \node [right] at (0.1, 5) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{葉城}}};
-        \node [right] at (0.1, 4) {{\fontsize{5.5pt}{5.5pt}\selectfont{北玉}}};
-        \node [right] at (0.1, 2.15) {{\fontsize{5.5pt}{5.5pt}\selectfont{藤咲}}};
-        \node [right] at (0.1, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{若菜}}};
-        \node [below] at (0.85,-1) {{\fontsize{5.5pt}{5.5pt}\selectfont{荒山}}};
-        \node [below] at (2,-1) {{\fontsize{5.5pt}{5.5pt}\selectfont{久山}}};
-        \node [below] at (2.75,-1.15) {{\fontsize{5.5pt}{5.5pt}\selectfont\textbf{林口}}};
-        \node [left] at (3,-2) {{\fontsize{5.5pt}{5.5pt}\selectfont{上沢}}};
-        \node [below] at (3,-3) {{\fontsize{5.5pt}{5.5pt}\selectfont{稲沢}}};
-        \node [below] at (4,-3) {{\fontsize{5.5pt}{5.5pt}\selectfont{沢木}}};
-        \node [below] at (5,-3) {{\fontsize{5.5pt}{5.5pt}\selectfont{下沢}}};
-
-        % 星川メトロ　宮星線
-        \node [above] at (-1, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{西郷}}};
-        \node [above] at (-1.65, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{学院前}}};
-        \node [right] at (1.0, -0.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{星川離宮}}};
-        \node [right] at (2.0, -0.2) {{\fontsize{5.5pt}{5.5pt}\selectfont{新紀}}};
-        \node [above] at (4, 1) {{\fontsize{5.5pt}{5.5pt}\selectfont{たぬき町}}};
-
-        % 星川メトロ　藤咲線
-        \node [below] at (-1, 2) {{\fontsize{5.5pt}{5.5pt}\selectfont{涼風公園}}};
-        \node [below] at (1, -3) {{\fontsize{5.5pt}{5.5pt}\selectfont{空港第二ビル}}};
-        \node [below] at (2, -3) {{\fontsize{5.5pt}{5.5pt}\selectfont{琴美}}};
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (2, -2.85) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\10}\par}};
+        \node [text=black, draw=MF, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=5, text centered] at (2.95, -2.85) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{MF\\11}\par}};
 
 
 
-        % -------------------------------------------------------
-        %
-        %   他
-        %
-        % -------------------------------------------------------
-        % 貨物駅
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-3, 3.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{羽森ふ頭\\貨物駅}\par}};
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-1, 3.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{夜北総局\\貨物駅}\par}};
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-1, 4) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{管理局\\貨物駅}\par}};
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-0.5, -3) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{\textbf{沢木空港\\貨物駅}\par}};
-
-        % 貨物線・支線　名称
-        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-2.5, 3.75) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{夜北臨海\\貨物線}\par}};
-        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-1.5, 3.9) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{夜北臨海\\貨物線}\par}};
-        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-2, -1) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{星原線}\par}};
-        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (-0.5, -2.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{沢木空港\\貨物線}\par}};
-        \node [text=black, draw=OTHER, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=10, text centered] at (1.5, 0.5) {\setlength{\baselineskip}{0pt}\fontsize{2.6pt}{2.6pt}\selectfont{{新紀支線}\par}};
-
-        % XX線・XX行き
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (-2, -3.5) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{夜北本線\\川田方面}\par}}; % かわでん
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (4.7, 4.05) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{夜北本線\\木塚方面}\par}}; %きずか
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (0.1, 5.7) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{葉城本線\\？？方面}\par}}; 
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=17, text centered] at (-0.7, 5.4) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{夜北新幹線\\？？方面}\par}}; 
-        \node [text=black, draw=OTHER, fill=white, inner sep=0.3, inner ysep=0.3, rounded corners= 1, text width=15, text centered] at (5.7, -3) {\setlength{\baselineskip}{0pt}\fontsize{3.4pt}{3.4pt}\selectfont{\textbf{葉城本線\\？？方面}\par}}; 
 
     \end{tikzpicture}
     \endpgfgraphicnamed
